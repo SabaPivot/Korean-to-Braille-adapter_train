@@ -5,7 +5,7 @@ from tqdm import tqdm
 from peft import PeftModel, PeftConfig
 import json
 import argparse
-from utils import translate_text, eval
+from ..utils import translate_text, eval
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model_name", type=str, default="VEXFZU/t5-xlarge-ko-kb", required=True, help="Path to the model checkpoint.")

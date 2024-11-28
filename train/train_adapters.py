@@ -4,7 +4,7 @@ from datasets import Dataset
 import torch
 from peft import AutoPeftModelForSeq2SeqLM, get_peft_model, TaskType, LoraConfig, IA3Config, PrefixEncoder, PrefixTuningConfig, PromptEncoderConfig
 import argparse
-from utils import read_korean_braille_pairs, preprocess_function
+from ..utils import read_korean_braille_pairs, preprocess_function
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model_name", type=str, default="VEXFZU/t5-xlarge-ko-kb", required=True, help="Path to the model checkpoint.")
